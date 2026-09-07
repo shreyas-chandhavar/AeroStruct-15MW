@@ -2,6 +2,15 @@
 
 ## Physics-Based Aero-Structural Optimization of a 15-MW Offshore Wind Turbine Blade with Machine-Learning Surrogates
 
+[![Tests](https://github.com/shreyas-chandhavar/AeroStruct-15MW/actions/workflows/tests.yml/badge.svg)](https://github.com/shreyas-chandhavar/AeroStruct-15MW/actions/workflows/tests.yml)
+![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-blue)
+![License](https://img.shields.io/badge/License-Apache--2.0-green)
+![Status](https://img.shields.io/badge/Status-v1.0%20complete-success)
+
+**Project status:** technical development complete; repository packaged for reproducible public review.
+
+**Quick links:** [Methodology](docs/methodology.md) · [Validation](docs/model_validation.md) · [ML workflow](docs/ml_surrogate_workflow.md) · [Results](docs/results.md) · [Assumptions & limitations](docs/assumptions_and_limitations.md) · [Reproducibility](docs/reproducibility.md) · [References](docs/references.md)
+
 AeroStruct-15MW is an independent reduced-order engineering study built around the public **IEA 15-MW offshore reference turbine**. The project combines:
 
 - Blade Element Momentum (BEM) aerodynamics
@@ -178,8 +187,26 @@ The repository keeps the final plots compact and readable, while the detailed de
 - [`docs/model_validation.md`](docs/model_validation.md) — aerodynamic and structural numerical checks;
 - [`docs/ml_surrogate_workflow.md`](docs/ml_surrogate_workflow.md) — DOE, surrogate validation, large search and physics re-verification;
 - [`docs/assumptions_and_limitations.md`](docs/assumptions_and_limitations.md) — scope boundaries and known trade-offs;
+- [`docs/reproducibility.md`](docs/reproducibility.md) — exact reproduction sequence and expected checkpoints;
+- [`docs/references.md`](docs/references.md) — upstream data and literature references;
 - [`results/tables/`](results/tables/) — machine-readable final metrics and operating-envelope data;
 - [`notebooks/01_end_to_end_workflow.ipynb`](notebooks/01_end_to_end_workflow.ipynb) — cleaned public reproduction notebook.
+
+---
+
+## Engineering capabilities demonstrated
+
+This repository is designed to make the technical work inspectable, not just to show final plots. It demonstrates:
+
+- aerodynamic model development and validation using BEM;
+- spanwise load integration and rotating-beam finite-element modelling;
+- centrifugal geometric stiffening and reduced-order modal analysis;
+- engineering trade-space exploration with explicit constraints;
+- fatigue-, gust-, energy- and modal-aware design screening;
+- physics-generated design-of-experiments and surrogate modelling;
+- holdout testing, five-fold cross-validation and feature-importance interpretation;
+- large-scale surrogate search followed by full physics re-verification;
+- reproducible Python packaging, tests and CI.
 
 ---
 
@@ -209,6 +236,7 @@ AeroStruct-15MW/
 │   ├── run_final_candidate.py
 │   └── run_ml_pipeline.py
 ├── notebooks/
+│   ├── README.md
 │   └── 01_end_to_end_workflow.ipynb
 ├── data/
 │   ├── reference/           # downloaded upstream files; not committed by default
@@ -220,7 +248,7 @@ AeroStruct-15MW/
 └── tests/
 ```
 
-The cleaned notebook and modular `src/` package provide the public reproducible implementation. The original exploratory Colab notebook and full technical report are retained as development/archive artifacts and can be added as release assets without making the code repository depend on large binary files.
+The cleaned notebook and modular `src/` package are the authoritative public implementation. The large exploratory Colab development notebook is intentionally kept out of the main branch so visitors see a readable, reproducible engineering workflow rather than thousands of experimental cells.
 
 ---
 
