@@ -1,0 +1,2 @@
+peak_twist_deg,aero_start_m,struct_start_m,EI_increase_percent,added_mass_kg_per_blade,rated_Cp,Cp_loss_percent,rated_root_moment_MNm,root_moment_reduction_percent,rated_rotating_tip_deflection_m,rated_tip_reduction_percent,gust_root_moment_MNm,gust_root_reduction_percent,DEL10_proxy_MNm,DEL_change_percent,flap_3P_margin_Hz,aep_proxy_GWh_per_year,aep_proxy_change_percent
+1.499301,76.911309,81.856218,0.060948,2.010238,0.487522,0.992393,59.54274,5.649581,14.443844,7.230474,71.418582,4.989315,16.389937,0.009846,0.183854,75.803,-0.078

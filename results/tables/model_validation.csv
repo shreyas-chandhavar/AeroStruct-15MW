@@ -1,0 +1,5 @@
+quantity,reference_or_crosscheck,model,difference_percent,unit
+Cp,0.489,0.4924088224,0.7,-
+Ct,0.799,0.8021253312,0.39,-
+Aerodynamic power,16.092,16.20437047,0.7,MW
+Non-rotating structural tip: integration vs FEM,17.0701,17.0427,-0.16,m

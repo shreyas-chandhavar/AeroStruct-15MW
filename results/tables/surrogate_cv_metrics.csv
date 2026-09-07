@@ -1,0 +1,22 @@
+target,model,CV_R2_mean,CV_R2_std,CV_R2_min,CV_R2_max
+rated_Cp,Random Forest,0.998196,0.000189,0.99796,0.998458
+rated_Cp,Extra Trees,0.999405,5.2e-05,0.999352,0.999471
+rated_Cp,Gradient Boosting,0.999204,0.000134,0.998976,0.999384
+rated_root_moment_MNm,Random Forest,0.997186,0.000694,0.996035,0.998074
+rated_root_moment_MNm,Extra Trees,0.999268,0.000143,0.999065,0.999469
+rated_root_moment_MNm,Gradient Boosting,0.998885,0.000351,0.998203,0.999148
+rated_tip_deflection_m,Random Forest,0.959561,0.011088,0.93897,0.970601
+rated_tip_deflection_m,Extra Trees,0.977776,0.006146,0.965873,0.983402
+rated_tip_deflection_m,Gradient Boosting,0.974603,0.008479,0.958047,0.981503
+gust_root_moment_MNm,Random Forest,0.997387,0.000666,0.996208,0.998163
+gust_root_moment_MNm,Extra Trees,0.999335,0.00012,0.999203,0.999518
+gust_root_moment_MNm,Gradient Boosting,0.999006,0.000262,0.998506,0.999219
+DEL10_proxy_MNm,Random Forest,0.983141,0.003973,0.977826,0.988105
+DEL10_proxy_MNm,Extra Trees,0.989898,0.002694,0.986041,0.992928
+DEL10_proxy_MNm,Gradient Boosting,0.992146,0.000942,0.990431,0.993098
+flap_3P_margin_Hz,Random Forest,0.993428,0.001782,0.990679,0.995949
+flap_3P_margin_Hz,Extra Trees,0.994075,0.001326,0.992269,0.99618
+flap_3P_margin_Hz,Gradient Boosting,0.996217,0.000979,0.994644,0.997244
+added_mass_kg,Random Forest,0.980958,0.004578,0.975722,0.987555
+added_mass_kg,Extra Trees,0.98886,0.003098,0.984624,0.992592
+added_mass_kg,Gradient Boosting,0.991112,0.001078,0.989728,0.992793

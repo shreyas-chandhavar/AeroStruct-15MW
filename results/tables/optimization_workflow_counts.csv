@@ -1,0 +1,2 @@
+physics_DOE_designs,training_designs,test_designs,surrogate_search_candidates,basic_feasible_candidates,core_surrogate_pareto_candidates,physics_feasible_after_verification,final_physics_verified_pareto_designs,designs_with_DEL_penalty_le_1pct
+300,240,60,100000,59633,152,102,54,17

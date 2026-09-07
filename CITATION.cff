@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite the repository and the IEA 15-MW reference turbine source separately."
+title: "AeroStruct-15MW: Physics-Based Aero-Structural Optimization with Machine-Learning Surrogates"
+type: software
+authors:
+  - name: "Shreyas C G"
+version: 1.0.0
+date-released: 2026-09-07
+license: Apache-2.0
+repository-code: "https://github.com/shreyas-chandhavar/AeroStruct-15MW"

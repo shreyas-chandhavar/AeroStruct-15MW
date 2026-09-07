@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Downloaded third-party reference inputs
+# Keep attribution README files, but avoid recommitting fetched upstream files.
+data/reference/*.dat
+data/reference/airfoils/
+data/reference/IEA15_UPSTREAM_LICENSE.txt
+data/reference/DATA_SOURCE.md
+
+# Processed reference tables can be regenerated from upstream inputs.
+data/processed/*.csv
+
+# Recomputed large outputs / local experiments
+results/tables/physics_database.csv
+results/tables/surrogate_core_pareto.csv
+results/tables/physics_verified_pareto*.csv
+results/tables/recomputed_*.csv
+results/figures/recomputed_*.png

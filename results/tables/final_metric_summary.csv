@@ -1,0 +1,7 @@
+metric,baseline,optimized,change_percent,unit
+Rated power coefficient Cp,0.4924088224,0.487522,-0.992393,-
+Rated flapwise root moment,63.10808228,59.54274,-5.649581,MN·m
+Rated rotating tip deflection,15.5696,14.443844,-7.230474,m
+20% frozen-control gust root moment,75.169,71.418582,-4.989315,MN·m
+DEL10 fatigue proxy,16.388323,16.389937,0.009846,MN·m
+Aerodynamic AEP proxy,75.863,75.803,-0.078,GWh/year

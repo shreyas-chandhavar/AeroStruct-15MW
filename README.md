@@ -50,15 +50,15 @@ These values are outputs of the reduced-order models documented in this reposito
 
 ## Final controlled operating envelope
 
-![Power curve](results/figures/final_power_curve.png)
+![Power curve](results/figures/final_power_curve.svg)
 
 The final design preserves the controlled aerodynamic power curve closely while changing the outboard loading distribution.
 
-![Root moment envelope](results/figures/final_root_moment_envelope.png)
+![Root moment envelope](results/figures/final_root_moment_envelope.svg)
 
 Across the sampled 4–25 m/s controlled envelope, the optimized root moment remained below the baseline at every evaluated point. The reduction ranged from roughly **0.83% to 9.49%** depending on operating condition.
 
-![Rotating tip deflection](results/figures/final_rotating_tip_deflection_envelope.png)
+![Rotating tip deflection](results/figures/final_rotating_tip_deflection_envelope.svg)
 
 The maximum sampled deflection magnitude was reduced by approximately **7.24%** near the critical below-rated region. At 22–25 m/s, both models enter a load-reversal regime and the optimized blade has a somewhat larger negative deflection magnitude; this trade-off is retained explicitly rather than hidden.
 
@@ -162,7 +162,7 @@ ML does **not** replace the physical solver in this project. The reduced-order p
 - surrogate screening: **100,000 designs**
 - final Pareto points were re-run through the physics evaluator
 
-![Surrogate CV](results/figures/surrogate_cv_performance.png)
+![Surrogate CV](results/figures/surrogate_cv_performance.svg)
 
 The final design is therefore described as **surrogate-assisted and physics-verified**, not as an unconstrained AI-generated design.
 
@@ -170,19 +170,16 @@ More detail: [`docs/ml_surrogate_workflow.md`](docs/ml_surrogate_workflow.md).
 
 ---
 
-## Selected development figures
+## Engineering evidence and traceability
 
-| Geometry | Smooth load-alleviation concept |
-|---|---|
-| ![Chord](results/figures/development/blade_chord_distribution.png) | ![Smooth twist](results/figures/development/smooth_outer_blade_twist.png) |
+The repository keeps the final plots compact and readable, while the detailed derivations, checks, assumptions and intermediate design decisions are documented in:
 
-| Rotating structural physics | Campbell analysis |
-|---|---|
-| ![Centrifugal stiffening](results/figures/development/rated_centrifugal_stiffening_deflection.png) | ![Campbell](results/figures/development/reduced_order_campbell_diagram.png) |
-
-| Simplified gust | Physics DOE |
-|---|---|
-| ![Gust](results/figures/development/frozen_control_gust_load_distribution.png) | ![LHS](results/figures/development/latin_hypercube_design_space.png) |
+- [`docs/methodology.md`](docs/methodology.md) — end-to-end engineering methodology;
+- [`docs/model_validation.md`](docs/model_validation.md) — aerodynamic and structural numerical checks;
+- [`docs/ml_surrogate_workflow.md`](docs/ml_surrogate_workflow.md) — DOE, surrogate validation, large search and physics re-verification;
+- [`docs/assumptions_and_limitations.md`](docs/assumptions_and_limitations.md) — scope boundaries and known trade-offs;
+- [`results/tables/`](results/tables/) — machine-readable final metrics and operating-envelope data;
+- [`notebooks/01_end_to_end_workflow.ipynb`](notebooks/01_end_to_end_workflow.ipynb) — cleaned public reproduction notebook.
 
 ---
 
@@ -212,7 +209,6 @@ AeroStruct-15MW/
 │   ├── run_final_candidate.py
 │   └── run_ml_pipeline.py
 ├── notebooks/
-│   ├── 00_full_development.ipynb
 │   └── 01_end_to_end_workflow.ipynb
 ├── data/
 │   ├── reference/           # downloaded upstream files; not committed by default
@@ -224,7 +220,7 @@ AeroStruct-15MW/
 └── tests/
 ```
 
-The original Colab development notebook is retained for traceability. The `src/` package contains the cleaned final implementation rather than requiring readers to navigate hundreds of exploratory cells.
+The cleaned notebook and modular `src/` package provide the public reproducible implementation. The original exploratory Colab notebook and full technical report are retained as development/archive artifacts and can be added as release assets without making the code repository depend on large binary files.
 
 ---
 

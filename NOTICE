@@ -1,0 +1,14 @@
+AeroStruct-15MW
+
+This project uses public reference inputs from the IEA Wind Systems
+IEA-15-240-RWT repository when the user runs scripts/fetch_reference_data.py.
+
+Upstream project:
+https://github.com/IEAWindSystems/IEA-15-240-RWT
+
+The upstream reference data are not claimed as original work of this project.
+The download script retains the upstream LICENSE alongside fetched files.
+
+Technical reference:
+Gaertner et al., "Definition of the IEA 15-Megawatt Offshore Reference Wind Turbine",
+NREL/TP-5000-75698, 2020.
